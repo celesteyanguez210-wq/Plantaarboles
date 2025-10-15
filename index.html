@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantar Árboles 🌱</title>
+  <style>
+    body {
+      background: #e8f5e9;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    button {
+      background: #4caf50;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌳 Plantar Árboles</h1>
+  <p>Presiona el botón para plantar un árbol virtual.</p>
+  <button onclick="plantar()">Plantar 🌱</button>
+  <p id="contador">Árboles plantados: 0</p>
+
+  <script>
+    let arboles = 0;
+    function plantar() {
+      arboles++;
+      document.getElementById('contador').innerText = `Árboles plantados: ${arboles}`;
+    }
+  </script>
+</body>
+</html>
